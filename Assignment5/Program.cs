@@ -29,8 +29,10 @@ namespace Assignment5
             Application.SetCompatibleTextRenderingDefault(false);
 
             // instantiate all forms
-            startForm = new StartForm();
+
             splashForm = new SplashForm();
+            startForm = new StartForm();
+
             selectForm = new SelectForm();
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
