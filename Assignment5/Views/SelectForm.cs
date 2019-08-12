@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,8 +23,14 @@ namespace Assignment5.Views
         {
             using (var db = new DollarComputersContext())
             {
-
+                db.products.Load();
+                productBindingSource.DataSource = db.products.Local.ToBindingList(); 
             }
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
