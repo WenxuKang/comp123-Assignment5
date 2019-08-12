@@ -9,7 +9,7 @@ namespace Assignment5
 {
     public static class Program
     {
-
+        //static numbers
         public static StartForm startForm;
         public static SplashForm splashForm;
         public static SelectForm selectForm;
@@ -28,7 +28,13 @@ namespace Assignment5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            // instantiate all forms
             startForm = new StartForm();
+            splashForm = new SplashForm();
+            selectForm = new SelectForm();
+            productInfoForm = new ProductInfoForm();
+            orderForm = new OrderForm();
+            aboutForm = new AboutForm();
 
             Application.Run(new StartForm());
         }
