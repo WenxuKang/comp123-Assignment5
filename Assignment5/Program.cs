@@ -1,4 +1,5 @@
-﻿using Assignment5.Views;
+﻿using Assignment5.Models;
+using Assignment5.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,9 @@ namespace Assignment5
         public static SelectForm selectForm;
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
-        public static AboutForm aboutForm; 
+        public static AboutForm aboutForm;
 
+        public static Product product;
 
 
         /// <summary>
@@ -37,6 +39,7 @@ namespace Assignment5
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             aboutForm = new AboutForm();
+            product = new Product();
 
             Application.Run(new StartForm());
         }

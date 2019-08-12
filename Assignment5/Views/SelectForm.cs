@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment5.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Assignment5.Views
         public SelectForm()
         {
             InitializeComponent();
+        }
+
+        private void SelectForm_Load(object sender, EventArgs e)
+        {
+            using (var db = new DollarComputersContext())
+            {
+
+            }
         }
     }
 }
