@@ -48,5 +48,11 @@ namespace Assignment5.Views
         {
 
         }
+
+        private void NextButton_Click_1(object sender, EventArgs e)
+        {
+            Program.orderForm.Show();
+            this.Hide();
+        }
     }
 }
