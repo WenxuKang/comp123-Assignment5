@@ -57,7 +57,7 @@ namespace Assignment5.Views
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("thanks you for your order and your order will be processed in 7 - 10 business days. ");
         }
 
         private void label5_Click(object sender, EventArgs e)
