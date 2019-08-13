@@ -32,5 +32,16 @@ namespace Assignment5.Views
         {
             Application.Exit();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            this.Hide();
+        }
+
+        private void ProductDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

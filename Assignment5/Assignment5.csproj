@@ -146,5 +146,11 @@
   <ItemGroup>
     <None Include="Resources\8341054-heap-of-dollars-money-background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\190115142749-rjr-props-130239648776x572.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar Bills.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

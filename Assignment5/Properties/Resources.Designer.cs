@@ -63,9 +63,29 @@ namespace Assignment5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _190115142749_rjr_props_130239648776x572 {
+            get {
+                object obj = ResourceManager.GetObject("190115142749-rjr-props-130239648776x572", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8341054_heap_of_dollars_money_background {
             get {
                 object obj = ResourceManager.GetObject("8341054-heap-of-dollars-money-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dollar_Bills {
+            get {
+                object obj = ResourceManager.GetObject("Dollar Bills", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
