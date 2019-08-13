@@ -21,5 +21,18 @@ namespace Assignment5.Views
         {
             Application.Exit();
         }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            Program.selectForm.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.productInfoForm.Show();
+            Program.productInfoForm.openToolStripMenuItem_Click(sender, e);
+            this.Hide();
+        }
     }
 }

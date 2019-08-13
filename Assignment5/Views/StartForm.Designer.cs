@@ -55,6 +55,7 @@
             this.StartButton.TabIndex = 1;
             this.StartButton.Text = "Start a new Order";
             this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // button2
             // 
@@ -65,6 +66,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Open a Saved Order";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 

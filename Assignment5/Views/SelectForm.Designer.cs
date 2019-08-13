@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.ProductDataGridView = new System.Windows.Forms.DataGridView();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.SelectLabel = new System.Windows.Forms.Label();
+            this.ShowSelectedTextBox = new System.Windows.Forms.TextBox();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,7 +66,6 @@
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.NextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -121,13 +123,41 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(603, 486);
+            this.CancelButton.Location = new System.Drawing.Point(665, 450);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(93, 47);
+            this.CancelButton.Size = new System.Drawing.Size(107, 47);
             this.CancelButton.TabIndex = 1;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.Location = new System.Drawing.Point(524, 448);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(121, 47);
+            this.NextButton.TabIndex = 2;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
+            // SelectLabel
+            // 
+            this.SelectLabel.Location = new System.Drawing.Point(8, 448);
+            this.SelectLabel.Name = "SelectLabel";
+            this.SelectLabel.Size = new System.Drawing.Size(210, 33);
+            this.SelectLabel.TabIndex = 3;
+            this.SelectLabel.Text = "Show your Selection";
+            this.SelectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ShowSelectedTextBox
+            // 
+            this.ShowSelectedTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ShowSelectedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowSelectedTextBox.Location = new System.Drawing.Point(204, 450);
+            this.ShowSelectedTextBox.Name = "ShowSelectedTextBox";
+            this.ShowSelectedTextBox.Size = new System.Drawing.Size(292, 31);
+            this.ShowSelectedTextBox.TabIndex = 4;
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -351,21 +381,13 @@
             // 
             this.productBindingSource.DataSource = typeof(Assignment5.Models.Product);
             // 
-            // NextButton
-            // 
-            this.NextButton.Location = new System.Drawing.Point(431, 486);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(121, 47);
-            this.NextButton.TabIndex = 2;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.ShowSelectedTextBox);
+            this.Controls.Add(this.SelectLabel);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.ProductDataGridView);
@@ -379,6 +401,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -419,5 +442,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn webcamDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Label SelectLabel;
+        private System.Windows.Forms.TextBox ShowSelectedTextBox;
     }
 }

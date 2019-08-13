@@ -43,5 +43,10 @@ namespace Assignment5.Views
             Program.orderForm.Show();
             this.Hide();
         }
+
+        public void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

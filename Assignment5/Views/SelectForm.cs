@@ -41,7 +41,16 @@ namespace Assignment5.Views
 
         private void ProductDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
+            var rows = ProductDataGridView.Rows;
+            var cells = rows[rowIndex].Cells;
 
+
+            rows[rowIndex].Selected = true;
+
+            string outputString = string.Empty;
+            outputString = cells[2].Value.ToString() + " " + cells[3].Value.ToString() + " Priced at: $" + cells[1].Value.ToString();
+            ShowSelectedTextBox.Text = outputString;
         }
     }
 }
