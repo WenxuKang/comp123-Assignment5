@@ -71,7 +71,7 @@
             this.FinishButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.TotalDataLabel = new System.Windows.Forms.TextBox();
-            this.SalesTaxData = new System.Windows.Forms.TextBox();
+            this.SalesTaxDataLabel = new System.Windows.Forms.TextBox();
             this.PriceDataLabel = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -115,12 +115,12 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -128,19 +128,19 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -446,7 +446,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.TotalDataLabel);
-            this.groupBox2.Controls.Add(this.SalesTaxData);
+            this.groupBox2.Controls.Add(this.SalesTaxDataLabel);
             this.groupBox2.Controls.Add(this.PriceDataLabel);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label16);
@@ -467,12 +467,12 @@
             this.TotalDataLabel.Size = new System.Drawing.Size(100, 29);
             this.TotalDataLabel.TabIndex = 6;
             // 
-            // SalesTaxData
+            // SalesTaxDataLabel
             // 
-            this.SalesTaxData.Location = new System.Drawing.Point(174, 78);
-            this.SalesTaxData.Name = "SalesTaxData";
-            this.SalesTaxData.Size = new System.Drawing.Size(100, 29);
-            this.SalesTaxData.TabIndex = 5;
+            this.SalesTaxDataLabel.Location = new System.Drawing.Point(174, 78);
+            this.SalesTaxDataLabel.Name = "SalesTaxDataLabel";
+            this.SalesTaxDataLabel.Size = new System.Drawing.Size(100, 29);
+            this.SalesTaxDataLabel.TabIndex = 5;
             // 
             // PriceDataLabel
             // 
@@ -623,7 +623,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox TotalDataLabel;
-        private System.Windows.Forms.TextBox SalesTaxData;
+        private System.Windows.Forms.TextBox SalesTaxDataLabel;
         private System.Windows.Forms.TextBox PriceDataLabel;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;

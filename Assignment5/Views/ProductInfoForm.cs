@@ -117,6 +117,8 @@ namespace Assignment5.Views
             CPUTypeDataLabel.Text = Program.product.CPU_type;
             CPUSpeedDataLabel.Text = Program.product.CPU_speed;
             WebCamDataLabel.Text = Program.product.webcam;
+
+            NextButton.Enabled = (ModelDataLabel.Text != string.Empty) ? true : false;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
